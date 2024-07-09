@@ -1,24 +1,10 @@
 #!/usr/bin/env python3
-"""
-task 1
-"""
+""" Module documentation """
+from typing import List
 
-import typing
-import asyncio
-async_generator = __import__('0-async_generator').async_generator
+async_generator = __import__("0-async_generator").async_generator
 
 
-async def async_comprehension() -> typing.List[float]:
-    """
-    anything
-    """
-    output = []
-    async for value in async_generator():
-        output.append(value)
-
-    return output
-
-# async def main():
-#     print(await async_comprehension())
-
-# asyncio.run(main())
+async def async_comprehension() -> List[float]:
+    """Func doc"""
+    return [random async for random in async_generator()]
